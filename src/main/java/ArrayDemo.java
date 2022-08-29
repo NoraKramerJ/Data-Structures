@@ -6,3 +6,6 @@ public class ArrayDemo {
         System.out.println(Arrays.toString(scoreArray));
     }
 }
+/*
+Arrays simple and easy to use, faster access to elements, disadvantages: wastes memory space since size is fixed it
+ */
