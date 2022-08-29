@@ -90,4 +90,54 @@ public class BigOSingleLoop {
         }
     }
 
+/*
+● Data structure is a particular way of storing and organizing data in a
+computer so that it can be used efficiently.
+● General data structure types include arrays, files, linked lists, stacks, queues,
+trees, graphs and so on.
+● Depending on the organization of the elements, data structures are
+classified into two types:
+1) Linear data structures: Elements are accessed in a sequential order but it
+is not compulsory to store all elements sequentially (say, Linked Lists).
+Examples: Linked Lists, Stacks and Queues.
+2) Non – linear data structures: Elements of this data structure are
+stored/accessed in a non-linear order. Examples: Trees and graphs.
+ */
+/*● An algorithm is the step-by-step instructions to solve a given problem.
+How do we compare algorithms?
+-Ideal solution : Expressing running time of an algorithm as a function of input size.
+f(n) where the input size is n.
+-This type of comparison is independent of machine time, programming style, etc.
+• Always assume that we have a very large size data (n) when talking about the performance of algorithms.
+ */
+/*
+Asymptotic Behavior
 
+● In mathematical analysis, asymptotic analysis is a method of
+describing limiting behavior.
+● If f(n) = n2 + 3n, then as n becomes very large, the term 3n becomes insignificant
+compared to n2. The function f(n) is said to be "asymptotically equivalent to n2
+as n → ∞".
+● If my input size is large, I can use asymptotic analysis.
+ */
+/*
+What is Big O notation
+
+● Big O notation, also called Landau's symbol, is a symbolism used in complexity theory,
+computer science, and mathematics to describe the asymptotic behavior of functions.
+● Basically, it tells you how fast a function grows or declines.
+In other words:Rate of Growth.
+
+● The ’Big-O’ is the language and metric we use to describe the efficiency of algorithms.
+
+● Big-O is a Big Picture approach.
+
+What is Big O notation
+
+● The ’Big-O’ notation allows us to ignore constant factors and lower-order terms
+and focus on the main components of a function that affect its growth.
+
+Rule 1: Always worst Case
+
+Rule 2: Remove Constants
+ */
