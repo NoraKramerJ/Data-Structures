@@ -13,6 +13,8 @@ public class NumberOfPeopleOnTheBus {
 }
     public static int countPassengers(ArrayList<int[]>stops) {
 int numOfPeople=0;
+
+// Runs in O(n) complexity because it is a single loop with size n
         for (int i = 0; i < stops.size(); i++) {
 numOfPeople=numOfPeople+stops.get(i)[0]-stops.get(i)[1];
         }
