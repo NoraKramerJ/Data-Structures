@@ -21,11 +21,17 @@ List<Student> students=new ArrayList<>();
 
         // 2. Iterator
         // Forward Iteration
+        System.out.println("printing with iterator");
+Iterator iter=students.listIterator();
 
+while(iter.hasNext()){
+    System.out.println(iter.next());
+}
 
         // Backwards Iteration
-
-
+        System.out.println("printing backwards with iterator");
+        while(((ListIterator<Student>) iter).hasPrevious()){
+            System.out.println(((ListIterator<Student>) iter).previous());}
         // 3. for each loop
         System.out.println("Printing with for_each loop..............");
 
