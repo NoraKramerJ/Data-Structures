@@ -34,7 +34,9 @@ while(iter.hasNext()){
             System.out.println(((ListIterator<Student>) iter).previous());}
         // 3. for each loop
         System.out.println("Printing with for_each loop..............");
-
+        for (Student student : students) {
+            System.out.println(student);
+        }
 
         // 4. Lambda
 
