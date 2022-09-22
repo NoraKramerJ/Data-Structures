@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -30,6 +32,9 @@ Set<Student> set=new HashSet<>();
 
         //System.out.println(firstRepeatingChar(st));
 
+
+        String str="Life is full of adventures";
+        System.out.println(firstRepeatingChar(str));
     }
     public static Character firstRepeatingChar(String str) {
         // What is the time complexity of the following code? O(n)
@@ -39,9 +44,10 @@ Set<Student> set=new HashSet<>();
         Set<Character> chars = new HashSet<>(); // in here I have Space Complexity of O(n)
         // iterate over the char array and add chars into hashSet
 
-        for (Character ch : str.toCharArray()) if(!chars.add(ch)) return ch;
+        for (Character ch : str.toCharArray()) if(!chars.add(ch))
+            return ch;
 
-
+// here if the ch is repeated, hashset won't add it so the method will return that repeated char for us
        return null;
         // if add ops is false return that char
 
