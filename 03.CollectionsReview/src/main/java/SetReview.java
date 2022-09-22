@@ -7,17 +7,26 @@ public class SetReview {
     public static void main(String[] args) {
         //1. create a set
 Set<Student> set=new HashSet<>();
+//HashSet doesn't keep the insertion order
         // 2 add element
         set.add(new Student(1, "Jack"));
         set.add(new Student(2, "Julia"));
         set.add(new Student(3, "Mike"));
         set.add(new Student(4, "Mary"));
 
-
-
-
-
         System.out.println(set);
+        Set<Student> set2=new LinkedHashSet<>();
+
+        //It keeps the insertion order
+        //doesn't accept duplicates
+        set2.add(new Student(1, "Jack"));
+        set2.add(new Student(2, "Julia"));
+        set2.add(new Student(3, "Mike"));
+        set2.add(new Student(4, "Mary"));
+        set2.add(new Student(4,"Mary"));
+        System.out.println(set2.add(new Student(4,"Mary")));
+        //the print statement above will return False as no duplicates will be added for LinkedHashSet
+        System.out.println(set2);
         //String st= "Javva Developer";
 
         //System.out.println(firstRepeatingChar(st));
